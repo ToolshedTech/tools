@@ -1,0 +1,40 @@
+{
+  "name": "spotify",
+  "version": "0.1.3",
+  "description": "AI SDK 6 provider bundle for Spotify tools including profile, search, playlist listing, and create playlist.",
+  "aiSdk": {
+    "package": "ai",
+    "major": 6,
+    "range": ">=6 <7"
+  },
+  "provider": "spotify",
+  "operation": "mixed",
+  "guardrail": "confirm_true",
+  "mcpAdapterAvailable": true,
+  "entry": "src/index.ts",
+  "files": [
+    {
+      "source": "src/index.ts",
+      "target": "src/tools/spotify/index.ts"
+    },
+    {
+      "source": "src/mcp.ts",
+      "target": "src/tools/spotify/mcp.ts",
+      "variant": "mcp"
+    }
+  ],
+  "dependencies": [
+    "ai@>=6 <7",
+    "zod@^3.25.76"
+  ],
+  "devDependencies": [],
+  "envVars": {
+    "SPOTIFY_ACCESS_TOKEN": "OAuth access token with user-read-private, playlist-read-private, and playlist modify scopes as needed."
+  },
+  "keywords": [
+    "ai-sdk",
+    "spotify",
+    "toolset",
+    "mcp"
+  ]
+}
