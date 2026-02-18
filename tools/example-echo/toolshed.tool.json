@@ -1,0 +1,32 @@
+{
+  "name": "example-echo",
+  "version": "0.1.0",
+  "description": "Example AI SDK 6 tool that echoes text input for local development and contract validation.",
+  "aiSdk": {
+    "package": "ai",
+    "major": 6,
+    "range": ">=6 <7"
+  },
+  "provider": "generic",
+  "operation": "read",
+  "guardrail": "none",
+  "mcpAdapterAvailable": false,
+  "entry": "src/index.ts",
+  "files": [
+    {
+      "source": "src/index.ts",
+      "target": "src/tools/example-echo.ts"
+    }
+  ],
+  "dependencies": [
+    "ai@>=6 <7",
+    "zod@^3.25.76"
+  ],
+  "devDependencies": [],
+  "envVars": {},
+  "keywords": [
+    "ai-sdk",
+    "toolshed",
+    "example"
+  ]
+}
