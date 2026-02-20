@@ -1,6 +1,6 @@
 {
   "name": "example-echo",
-  "version": "0.1.64",
+  "version": "0.1.65",
   "description": "Example AI SDK 6 tool that echoes text input for local development and contract validation.",
   "aiSdk": {
     "package": "ai",
